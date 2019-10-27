@@ -1,0 +1,18 @@
+{
+    "name": "vdechenaux/webcam",
+    "description": "PHP code to use the server's webcam",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Dechenaux",
+            "email": "vincent.dechenaux@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "VDX\\Webcam\\": "src/"
+        }
+    },
+    "require": {}
+}
