@@ -14,5 +14,8 @@
             "VDX\\Webcam\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "php": ">=7.4.0",
+        "ext-FFI": "*"
+    }
 }
