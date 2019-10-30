@@ -52,6 +52,10 @@ DEF;
 
     public function saveFrame(string $filename): bool
     {
+        if ($this->cvCamera === null) {
+            return false;
+        }
+
         return (bool) $this->ffi->cvSaveImage($filename, $this->ffi->cvQueryFrame($this->cvCamera));
     }
 }
