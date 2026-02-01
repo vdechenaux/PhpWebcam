@@ -12,17 +12,21 @@ You can see this library in action [here](https://github.com/vdechenaux/PhpWebca
 
 - Ext FFI
 
-- OpenCV (e.g. `libopencv-videoio-dev` on APT based systems)
+- OpenCV (e.g. [`libopencv-videoio-dev`](https://packages.debian.org/trixie/libopencv-videoio-dev) on APT based systems, [`opencv-dev`](https://pkgs.alpinelinux.org/package/edge/community/x86_64/opencv-dev) on Alpine Linux)
 
 ## Installation
 
-```
+```sh
 composer require vdechenaux/webcam
 ```
 
 ## Usage
 
 ```php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
 $webcam = new \VDX\Webcam\Webcam();
 
 // It can produce an other size if your webcam does not support the provided size
